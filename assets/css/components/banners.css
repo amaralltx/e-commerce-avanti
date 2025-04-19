@@ -1,0 +1,89 @@
+/* Banner super sale */
+.super-sale-banner {
+  background-color: #E7E7EA;
+  display: flex;
+  margin-bottom: 77px;
+  height: 510px;
+}
+
+.super-sale-banner img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: 65%;
+}
+
+/* Banner chamada contato */
+
+.contact-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: 64px 0;
+}
+.contact-image {
+  width: 100%;
+}
+
+.contact-banner-text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 132px;
+  line-height: 132px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 1300px) {
+  .super-sale-banner {
+    margin-bottom: 36px;
+    height: 410px;
+  }
+  .contact-banner-text {
+    font-size: 24px;
+    height: 90px;
+    line-height: 90px;
+  }
+}
+
+
+@media (max-width: 850px) {
+  .super-sale-banner {
+    height: 306px;
+  }
+  .super-sale-banner img {
+    object-position: center;
+  }
+  .contact-banner {
+    margin-top: 0;
+    margin-bottom: 56px;
+  }
+  .contact-banner-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+  }
+  .contact-image {
+      height: 449px;
+      object-fit: cover;
+      object-position: 60%;
+      width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .contact-image {
+    height: auto;
+  }
+}

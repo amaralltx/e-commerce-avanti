@@ -1,0 +1,255 @@
+/* Navegação */
+.navigation {
+  grid-area: nav;
+  margin-top: 18px;
+  position: relative;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  font-size: 14px;
+}
+
+.nav-item {
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s ease-in;
+}
+
+.nav-item > a:hover {
+  color: var(--color-primary);
+}
+
+.categories {
+  color: black;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-toggle.active {
+  color: var(--color-primary);
+}
+
+.menu-root {
+  display: none;
+}
+
+.menu-root.active {
+  display: flex;
+}
+/* Mega Menu */
+.mega-menu {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 160%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: var(--shadow);
+  z-index: 1000;
+  width: 1250px;
+}
+
+.mega-menu.active {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Coluna de departamentos */
+.departments-column {
+  width: 230px;
+  height: 344px;
+  overflow-y: auto;
+  padding: 1.5em;
+  background-color: #f5f5f5;
+  padding-right: 16px;
+}
+
+.department-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.department-link {
+  color: #707070;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.department-item.active .department-link {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.arrow {
+  font-size: 18px;
+}
+
+/* Colunas de categorias */
+.categories-columns {
+  display: flex;
+  flex: 1;
+  padding: 18px 34px;
+  color: #656565;
+}
+
+.category-column {
+  flex: 1;
+  width: 200px;
+}
+
+.category-list li {
+  margin: 1em 0;
+}
+
+.category-title {
+  color: var(--color-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.category-list a {
+  font-size: 14px;
+}
+
+.category-list a:hover {
+  color: var(--color-primary);
+}
+
+.mega-menu-left {
+  height: 100%;
+  display: flex;
+}
+/* Coluna promocional */
+.mega-menu-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin: 11px 24px;
+}
+
+/* Imagem promocional mega-menu */
+.promo-image {
+  width: 236px;
+  height: 300px;
+  background-image: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.75) -20%,
+      rgba(0, 0, 0, 0) 138%
+    ),
+    url("../../img/mug-bg.png");
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.promo-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  padding: 3em 2em;
+  z-index: 1;
+}
+
+.promo-content span {
+  line-height: 27px;
+  font-size: 24px;
+}
+
+.promo-content :nth-child(n + 3):nth-child(-n + 5) {
+  font-weight: 700;
+}
+
+.promo-button {
+  margin-top: 3em;
+  padding: 1em 2em;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  width: fit-content;
+  font-weight: 700;
+}
+
+.promo-button:hover {
+  background-color: white;
+  color: #2a2a2a;
+}
+
+/* Mega Menu departamento */
+
+.mega-menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mega-menu-department-left {
+  height: 330px;
+  padding: 19px 16px;
+}
+.department-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.department-category-column {
+  width: 240px;
+}
+
+.department-category-list {
+  color: #656565;
+}
+
+.department-tittle {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+.department-category-tittle {
+  font-size: 14px;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.department-category-list a {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 7px 0;
+}
+
+.department-category-list a:hover {
+  color: var(--color-primary);
+}
+
+
+@media (max-width: 1300px){
+
+  .mega-menu {
+    width: 850px;
+  }
+
+  .department-category-column {
+    width: 180px;
+  }
+}

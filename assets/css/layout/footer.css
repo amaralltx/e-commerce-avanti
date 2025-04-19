@@ -1,0 +1,172 @@
+/* Footer */
+
+.footer-top {
+    background-color: var(--color-footer-soft-gray);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 64px 0;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px 0;
+    width: 194px;
+    height: 93px;
+    margin-right: 142px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 0 130px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+.footer-heading {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    cursor: default;
+    list-style: none;
+    pointer-events: none; /* desabilita clica de expansão */
+    margin-bottom: 11px;
+}
+
+.footer-links {
+    white-space: nowrap;
+    color: var(--color-gray-font);
+}
+
+.footer-link {
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.schedule {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+/* Footer pagamentos */
+
+.payment-methods {
+    background-color: var(--color-footer-soft-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 64px;
+    gap: 36px;
+}
+
+/* Footer segunraça */
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    max-width: 1075px;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--color-gray-font);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    color: var(--color-footer-soft-gray);
+}
+
+@media (max-width: 1300px) {
+    .footer-top {
+        padding: 32px 16px;
+    }
+    .footer-brand {
+        margin-right: 45px;
+    }
+    .footer-nav {
+        gap: 0 45px;
+    }
+    .footer-text {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-top {
+        padding: 0;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-brand {
+        padding: 48px 98px;
+        height: auto;
+        margin: 0;
+    }
+    .footer-nav {
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid #ddd;
+    }
+    .footer-accordion {
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+    }
+    .footer-heading {
+        cursor: pointer;
+        width: fit-content;
+        margin: 0;
+        pointer-events: all;
+        font-size: 16px;
+        padding: 16px;
+        position: relative;
+        align-self: left;
+        width: 100%;
+    }
+    .footer-heading::after {
+        content: url("../../svg/footer/arrow-down.svg");
+        position: absolute;
+        right: 1rem;
+        transition: transform 0.2s ease-in-out;
+        display: inline-block;
+    }
+
+    .footer-accordion[open] > .footer-heading::after {
+        transform: rotate(-90deg);
+    }
+    .footer-links, .footer-info {
+      padding: 0 0 16px 16px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-in-out;
+    }
+    .footer-accordion[open] .footer-links, .footer-accordion[open] .footer-info{
+      max-height: fit-content;
+    }
+    .payment-methods {
+        max-width: 100%;
+        flex-wrap: wrap;
+        padding: 50px 40px;
+        line-height: 22px;
+        gap: 30px;
+    }
+}

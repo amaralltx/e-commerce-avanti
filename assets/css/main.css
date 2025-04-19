@@ -1,0 +1,50 @@
+@import url(base/reset.css);
+@import url(base/typography.css);
+@import url(components/banners.css);
+@import url(components/info_section.css);
+@import url(components/navbar.css);
+@import url(components/newsletter.css);
+@import url(components/slider.css);
+@import url(layout/footer.css);
+@import url(layout/header.css);
+@import url(components/accessibility-menu.css);
+
+
+:root {
+  --color-primary: #005CFF;
+  --color-tag-new: #00264E;
+  --color-gray-font: #303030;
+  --color-footer-soft-gray : #F5F5F5;
+  --shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.082);
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Conteúdo principal */
+.main-content {
+  flex: 1;
+  margin: 0 auto 40px auto;
+  max-width: 100vw;
+}
+
+@media (max-width: 1300px){
+  .hide-on-small {
+    display: none;
+  }
+}
+
+@media (max-width: 800px){
+  .hide-on-mobile {
+    display: none !important;
+  }
+}

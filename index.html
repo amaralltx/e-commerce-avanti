@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AVANTI - E-commerce</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>  
+  <!-- Menu de acessibilidade -->
+  <nav id="accessibility-menu" class="accessibility-menu" role="navigation" aria-label="Menu de acessibilidade">
+    <ul>
+      <li><a href="#main-content" class="skip-link">Conteúdo principal</a></li>
+      <li><a href="#search-bar"    class="skip-link">Barra de Pesquisa</a></li>
+      <li><a href="#menu-button"   class="skip-link">Menu</a></li>
+      <li><a href="#contact-section" class="skip-link">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <!-- Cabeçalho -->
+    <header class="header">
+      <!-- Banner cupom promocional -->
+      <div class="promo-banner">
+        <b>
+          Ganhe <span class="discount-value">R$10,00</span> de
+          desconto no seu primeiro pedido. Utilize o cupom
+          <span class="cupom">DESCONTO10</span>
+        </b>
+      </div>
+      <!-- Parte superior do cabeçalho -->
+      <a href="#" data-department="Todas as Categorias" class="menu-mobile-btn">
+        <img src="assets/svg/header/menu.svg" alt="" />
+      </a>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="">
+          <img src="assets/svg/logo.svg" alt="" />
+        </a>
+      </div>
+      <!-- Barra de pesquisa -->
+      <div class="search-container">
+        <input id="search-bar" tabindex="-1" type="text" class="search-input" placeholder="Digite aqui o que você procura" />
+        <button class="search-button">
+          <img src="assets/svg/header/search.svg" alt="" />
+        </button>
+      </div>
+
+      <!-- Usuário e carrinho -->
+      <div class="user-cart">
+        <div class="user-account">
+          <div class="user-icon">
+            <a href=""><img src="assets/svg/header/user.svg" alt="" /></a>
+          </div>
+          <div class="user-info">
+            <span class="greeting">Olá,</span>
+            <span class="username">Nome cliente!</span>
+          </div>
+        </div>
+        <div class="cart">
+          <a href=""><img src="assets/svg/header/checkout.svg" alt="" /></a>
+          <span class="cart-count">2</span>
+        </div>
+      </div>
+
+      <!-- Parte inferior do cabeçalho -->
+      <!-- Navegação -->
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item categories dropdown">
+            <a id="menu-button" tabindex="-1" href="#" data-department="Todas as Categorias" class="dropdown-toggle">
+              <img src="assets/svg/header/menu.svg" style="max-height: 1.5em" alt="" />
+              <span><b>Todas as Categorias</b></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="dropdown-toggle" data-department="Moda Feminina" href="#">Moda Feminina</a>
+          </li>
+          <li class="nav-item">
+            <a class="dropdown-toggle" data-department="Moda Masculina" href="#">Moda Masculina</a>
+          </li>
+          <li class="nav-item">
+            <a class="dropdown-toggle" data-department="Moda Infantil" href="#">Moda Infantil</a>
+          </li>
+          <li class="nav-item hide-on-small">
+            <a class="dropdown-toggle" data-department="Cuidados Pessoais" href="#">Cuidados Pessoais</a>
+          </li>
+          <li class="nav-item hide-on-small">
+            <a class="dropdown-toggle" data-department="Home Decor" href="#">Home Decor</a>
+          </li>
+          <li class="nav-item hide-on-small">
+            <a class="dropdown-toggle" data-department="Esporte e Lazer" href="#">Esporte e Lazer</a>
+          </li>
+          <li class="nav-item hide-on-small">
+            <a class="dropdown-toggle" data-department="Eletronicos e Acessorios" href="#">Eletrônicos e Acessórios</a>
+          </li>
+          <li class="nav-item">
+            <a class="dropdown-toggle" data-department="Ofertas" href="#">Ofertas</a>
+          </li>
+        </ul>
+        <!-- Menu expansivo da nav bar -->
+        <div id="menu_root" class="menu-root"></div>
+      </nav>
+    </header>
+
+    <main id="main-content"  tabindex="-1" class="main-content">
+      <!-- Banner promocional -->
+      <section class="super-sale-banner">
+        <a href="">
+        <picture>
+            <!-- Imagem para mobile -->
+            <source media="(max-width: 850px)" srcset="assets/img/banner-super-sale-mobile.png">
+
+            <!-- Imagem para desktok -->
+            <source media="(min-width: 851px)" srcset="assets/img/banner-super-sale.png">
+
+            <!-- fallback -->
+            <img src="assets/img/banner-super-sale.png" alt="Imagem promocional, super promoção itens selecionados com até 50 porcento de desconto">
+          </picture>
+        </a>
+      </section>
+
+      <!-- Carrossel de produtos -->
+      <slider-products class="first-slider"></slider-products>
+
+      <!-- Seção de informações -->
+      <info-section 
+        img="assets/img/info-section-mug.png" 
+        title="LOREM IPSUM">
+        <p slot="desc">
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue</p>
+        <p slot="desc">
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue</p>
+      </info-section>
+
+      <!-- Seção de informações localização-->
+      <section class="info-location-section">
+        <div class="info-location-content">
+          <h2 class="info-location-tittle">LOREM IPSUM</h2>
+          <div class="info-location-description-container">
+            <div class="circle">
+              <img src="assets/svg/main-content/ping.svg" alt="" />
+            </div>
+            <p>
+              Aenean massa. Cum sociis natoque penatibus et
+              magnis dis parturient montes, nascetur ridiculus
+              mus. Donec quam felis, ultricies nec,
+              pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+          <div class="info-location-description-container">
+            <div class="circle">
+              <img src="assets/svg/main-content/ping.svg" alt="" />
+            </div>
+            <p>
+              Aenean massa. Cum sociis natoque penatibus et
+              magnis dis parturient montes, nascetur ridiculus
+              mus. Donec quam felis, ultricies nec,
+              pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+          <div class="info-location-description-container">
+            <div class="circle">
+              <img src="assets/svg/main-content/ping.svg" alt="" />
+            </div>
+            <p>
+              Aenean massa. Cum sociis natoque penatibus et
+              magnis dis parturient montes, nascetur ridiculus
+              mus. Donec quam felis, ultricies nec,
+              pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+        </div>
+
+        <div class="info-location-image">
+          <img src="assets/img/generic-mug.png" alt="" />
+        </div>
+      </section>
+
+      <!-- Seção de informações -->
+      <info-section 
+        img="assets/img/info-section-mug.png" 
+        title="LOREM IPSUM">
+        <p slot="desc">
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue</p>
+        <p slot="desc">
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue</p>
+      </info-section>
+
+      <!-- Carrossel de produtos -->
+      <slider-products class="hide-on-mobile"></slider-products>
+
+      <!-- Seção com banner com chamada para contato -->
+      <section class="contact-banner">
+        <picture>
+          <!-- Imagem para mobile -->
+          <source media="(max-width: 390px)" srcset="assets/img/banner-call-bg-mobile.png">
+
+          <!-- Imagem para desktok -->
+          <source media="(min-width: 391px)" srcset="assets/img/banner-call-bg.png">
+
+          <!-- Fallback -->
+          <img src="assets/img/banner-call-bg.png" alt="" class="contact-image" />
+        </picture>
+        <span class="contact-banner-text">Entre em contato conosco e verifique a disponibilidade
+          para sua região!</span>
+      </section>
+
+
+      <!-- Newsletter -->
+      <section class="newsletter">
+        <h3 class="newsletter-tittle">
+          Cadastre-se na nossa <span>newsletter</span>
+        </h3>
+        <form action="" class="newsletter-form">
+          <input type="text" name="name" id="newsletter-name" class="newsletter-text-input"
+            placeholder="Digite seu nome" />
+          <input type="email" name="email" id="newsletter-email" class="newsletter-text-input"
+            placeholder="Digite seu e-mail" />
+          <div class="newsletter-checkbox-container">
+            <input type="checkbox" name="terms" id="newsletter-terms" />
+            <label for="newsletter-terms">Estou de acordo com a
+              <span>Política de Privacidade</span></label>
+          </div>
+          <button type="submit" class="newsletter-button">
+            Cadastrar
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Seção superior -->
+        <div class="footer-top">
+          <!-- Logo e redes sociais -->
+          <div class="footer-brand">
+            <img src="assets/svg/logo.svg" alt="Logo" class="footer-logo" />
+            <div class="social-icons">
+              <a href="#" class="social-link">
+                  <img src="assets/svg/footer/instagram.svg" alt="">
+              </a>
+              <a href="#" class="social-link">
+                <img src="assets/svg/footer/facebook.svg" alt="">
+              </a>
+              <a href="#" class="social-link">
+                <img src="assets/svg/footer/youtube.svg" alt="">
+              </a>
+              <a href="#" class="social-link">
+                <img src="assets/svg/footer/tiktok.svg" alt="">
+              </a>
+            </div>
+          </div>
+  
+          <!-- Navegação -->
+          <div class="footer-nav">
+            <!-- Coluna Institucional -->
+            <details class="footer-accordion footer-col">
+              <summary class="footer-heading">Institucional</summary>
+              <ul class="footer-links">
+                <li><a href="#"><h5 class="footer-link">Sobre Nós</h5></a></li>
+                <li><a href="#"><h5 class="footer-link">Nossas Lojas</h5></a></li>
+                <li><a href="#"><h5 class="footer-link">Privacidade e Segurança</h5></a></li>
+                <li><a href="#"><h5 class="footer-link">Termos e Condições</h5></a></li>
+              </ul>
+            </details>
+            <!-- Coluna Central de ajuda -->
+            <details class="footer-accordion footer-col">
+              <summary class="footer-heading">Central de Ajuda</summary>
+              <ul class="footer-links">
+                <li><a href="#"><h5 class="footer-link">Fale Conosco</h5></a></li>
+                <li><a href="#"><h5 class="footer-link">Frete e Entrega</h5></a></li>
+                <li><a href="#"><h5 class="footer-link">Trocas e Devoluções</h5></a></li>
+                <li><a href="#"><h5 class="footer-link">Formas de Pagamento</h5></a></li>
+                <li><a href="#"><h5 class="footer-link">FAQ</h5></a></li>
+              </ul>
+            </details>
+            <details id="contact-section"  tabindex="-1"  class="footer-accordion footer-col">
+              <summary class="footer-heading">Atendimento</summary>
+              <ul class="footer-info">
+                <li><h5 class="footer-link"><span class="info-label"><b>Telefone:</b></span> (00) 1234-5678</h5></li>
+                <li><h5 class="footer-link"><span class="info-label"><b>E-mail:</b></span> exemplo@exemplo.com.br</h5></li>
+                <li>
+                  <h5 class="footer-link schedule">
+                    <p></p><b>Horário de atendimento:</b><br>Segunda a Sábado: 07h00 às 23h00<br>Domingos e Feriados: 07h00 às 21h00</p>
+                  </h5>
+                </li>
+              </ul>
+            </details>
+          </div>
+        </div>
+        
+        <!-- Payment Methods -->
+        <div class="payment-methods">
+          <img src="assets/svg/footer/amex.svg" alt="">
+          <img src="assets/svg/footer/mastercard.svg" alt="">
+          <img src="assets/svg/footer/visa.svg" alt="">
+          <img src="assets/svg/footer/hipercard.svg" alt="">
+          <img src="assets/svg/footer/elo.svg" alt="">
+          <img src="assets/svg/footer/diners-club.svg" alt="">
+          <img src="assets/svg/footer/paypal.svg" alt="">
+          <img src="assets/svg/footer/pix.svg" alt="">
+          <img src="assets/svg/footer/boleto.svg" alt="">
+        </div>
+        
+        <div class="footer-bottom">
+          <!-- Texto genérico -->
+          <div class="footer-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+              dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+              suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+              vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+              accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+              nulla facilisi.
+            </p>
+          </div>
+          <!-- Ícones do projeto -->
+          <div class="footer-icons">
+            <a href="">
+              <img src="assets/svg/footer/lets-encrypt.svg" alt="">
+            </a>
+            <a href="">
+              <img src="assets/svg/footer/VTEX-PCI.svg" alt="">
+            </a>
+            <p>|</p>
+            <a href="">
+              <img src="assets/svg/footer/small-logo.svg" alt="">
+            </a>
+            <a href="">
+              <img src="assets/svg/footer/VTEX.svg" alt="">
+            </a>
+          </div>
+  
+        </div>
+    </footer>
+  </div>
+
+
+  <!-- Template da seção informativa -->
+  <template id="info-section-template">
+    <section class="info-section">
+      <div class="info-section-image">
+        <img part="image" src="" alt="">
+      </div>
+      <div class="info-section-content">
+        <h2 class="info-section-tittle" part="title"></h2>
+        <slot class="info-section-description" name="desc"></slot>
+      </div>
+    </section>
+  </template>
+
+  <!-- Script exibição do menu -->
+  <script src="assets/js/toggle_menu.js"></script>
+
+  <!-- Carrossel -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Componente do carrossel -->
+  <script src="assets/components/slider.js"></script>
+
+  <!-- Seção de informações -->
+  <script src="assets/components/info.js"></script>
+
+  <!-- Menu de acessibilidade -->
+  <script src="assets/js/accessibility_menu.js"> </script>
+
+  <!-- Toggle menu footer -->
+   <script src="assets/js/toggle_footer.js"></script>
+</body>
+
+</html>
