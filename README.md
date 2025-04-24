@@ -3,7 +3,7 @@
 <!-- ESTILO DE CABEÇALHO: CLÁSSICO -->
 <div align="center">
 
-<img src="readmeai/assets/logos/purple.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Logotipo do Projeto"/>
+<img src="assets/svg/avanti-logo.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Logotipo do Projeto"/>
 
 # E-COMMERCE-AVANTI
 
