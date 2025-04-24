@@ -25,10 +25,6 @@
 - [Funcionalidades](#funcionalidades)
 - [Estrutura do Projeto](#estrutura-do-projeto)
   - [Índice do Projeto](#índice-do-projeto)
-- [Como Começar](#como-começar)
-  - [Pré-requisitos](#pré-requisitos)
-  - [Instalação](#instalação)
-  - [Uso](#uso)
 
 ---
 
