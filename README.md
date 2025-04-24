@@ -40,7 +40,6 @@ O **E-COMMERCE-AVANTI** é um projeto desenvolvido para a Avanti Inovation Class
 - Estrutura semântica e acessível organizada de acordo com o design proposto.
 - Layout responsivo para desktop e dispositivos móveis.
 - Navegação clara e componentes reutilizáveis.
-- 
 ---
 
 ## Estrutura do Projeto
@@ -56,34 +55,6 @@ O **E-COMMERCE-AVANTI** é um projeto desenvolvido para a Avanti Inovation Class
     │   └── svg
     └── index.html
 ```
-
-### Índice do Projeto
-
-<details open>
-	<summary><b><code>E-COMMERCE-AVANTI/</code></b></summary>
-	<details>
-		<summary><b>__root__</b></summary>
-		<blockquote>
-			<div class='directory-path' style='padding: 8px 0; color: #666;'>
-				<code><b>⦿ __root__</b></code>
-			<table style='width: 100%; border-collapse: collapse;'>
-			<thead>
-				<tr style='background-color: #f8f9fa;'>
-					<th style='width: 30%; text-align: left; padding: 8px;'>Nome do Arquivo</th>
-					<th style='text-align: left; padding: 8px;'>Resumo</th>
-				</tr>
-			</thead>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/amaralltx/e-commerce-avanti/blob/master/index.html'>index.html</a></b></td>
-					<td style='padding: 8px;'><code>❯ REPLACE-ME</code></td>
-				</tr>
-			</table>
-		</blockquote>
-	</details>
-</details>
-
----
-
 ## Como Começar
 
 ### Pré-requisitos
