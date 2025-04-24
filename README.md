@@ -10,7 +10,6 @@
 <em></em>
 
 <!-- BADGES -->
-<img src="https://img.shields.io/github/license/amaralltx/e-commerce-avanti?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="licença">
 <img src="https://img.shields.io/github/last-commit/amaralltx/e-commerce-avanti?style=default&logo=git&logoColor=white&color=0080ff" alt="último commit">
 <img src="https://img.shields.io/github/languages/top/amaralltx/e-commerce-avanti?style=default&color=0080ff" alt="linguagem principal">
 <img src="https://img.shields.io/github/languages/count/amaralltx/e-commerce-avanti?style=default&color=0080ff" alt="quantidade de linguagens">
