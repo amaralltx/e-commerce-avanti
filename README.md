@@ -30,24 +30,17 @@
   - [Pré-requisitos](#pré-requisitos)
   - [Instalação](#instalação)
   - [Uso](#uso)
-  - [Testes](#testes)
-- [Roadmap](#roadmap)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
-- [Agradecimentos](#agradecimentos)
 
 ---
 
 ## Visão Geral
 
-O **E-COMMERCE-AVANTI** é um projeto de loja virtual que demonstra a implementação de um layout moderno e responsivo, oferecendo uma experiência de compra online rica e intuitiva. Através de HTML, CSS e JavaScript, o projeto traz:
+O **E-COMMERCE-AVANTI** é um projeto desenvolvido para a Avanti Inovation Class, trata-se de um projeto front-end de uma loja virtual que demonstra a implementação de um layout responsivo. Através de HTML, CSS e JavaScript, o projeto traz:
 
 - Estrutura semântica e acessível organizada de acordo com o design proposto.
 - Layout responsivo para desktop e dispositivos móveis.
 - Navegação clara e componentes reutilizáveis.
-
-Este repositório serve tanto como exemplo de boas práticas em front-end quanto como base para novos desenvolvimentos em e-commerce.
-
+- 
 ---
 
 ## Funcionalidades
@@ -134,57 +127,6 @@ Executar o projeto com:
 ```sh
 echo 'INSIRA O COMANDO DE EXECUÇÃO AQUI'
 ```
-
-### Testes
-
-O e-commerce-avanti utiliza o framework de testes {__test_framework__}. Execute a suíte de testes com:
-
-```sh
-echo 'INSIRA O COMANDO DE TESTE AQUI'
-```
-
----
-
-## Roadmap
-
-- [X] **`Tarefa 1`**: <strike>Implementar a primeira funcionalidade.</strike>
-- [ ] **`Tarefa 2`**: Implementar a segunda funcionalidade.
-- [ ] **`Tarefa 3`**: Implementar a terceira funcionalidade.
-
----
-
-## Contribuição
-
-- **💬 [Participe das Discussões](https://github.com/amaralltx/e-commerce-avanti/discussions)**: Compartilhe suas ideias, dê feedback ou tire dúvidas.
-- **🐛 [Reporte Problemas](https://github.com/amaralltx/e-commerce-avanti/issues)**: Envie bugs encontrados ou solicite novas funcionalidades.
-- **💡 [Envie Pull Requests](https://github.com/amaralltx/e-commerce-avanti/blob/main/CONTRIBUTING.md)**: Revise PRs abertas e envie suas contribuições.
-
-<details closed>
-<summary>Diretrizes de Contribuição</summary>
-
-1. **Fork do Repositório**: Faça um fork do projeto para sua conta no GitHub.
-2. **Clone Localmente**: Clone o repositório forked para sua máquina:
-   ```sh
-   git clone https://github.com/amaralltx/e-commerce-avanti
-   ```
-3. **Crie uma Nova Branch**: Trabalhe sempre em uma branch descritiva:
-   ```sh
-   git checkout -b nova-funcionalidade
-   ```
-4. **Faça Suas Alterações**: Desenvolva e teste localmente.
-5. **Commit das Alterações**: Use mensagens claras:
-   ```sh
-   git commit -m 'Implementada nova funcionalidade.'
-   ```
-6. **Push para o GitHub**: Envie sua branch:
-   ```sh
-   git push origin nova-funcionalidade
-   ```
-7. **Abra um Pull Request**: Crie o PR no repositório original, descrevendo mudanças e motivações.
-
-</details>
-
----
 
 
 [back-to-top]: https://img.shields.io/badge/-VOLTAR_ao_TOPO-151515?style=flat-square
