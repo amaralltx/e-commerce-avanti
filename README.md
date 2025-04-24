@@ -54,44 +54,6 @@ O **E-COMMERCE-AVANTI** é um projeto desenvolvido para a Avanti Inovation Class
     │   └── svg
     └── index.html
 ```
-## Como Começar
-
-### Pré-requisitos
-
-Este projeto requer as seguintes dependências:
-
-- **Linguagem de Programação:** HTML
-
-### Instalação
-
-Para construir o e-commerce-avanti a partir do código-fonte e instalar dependências:
-
-1. **Clonar o repositório:**
-
-    ```sh
-    ❯ git clone https://github.com/amaralltx/e-commerce-avanti
-    ```
-
-2. **Navegar até o diretório do projeto:**
-
-    ```sh
-    ❯ cd e-commerce-avanti
-    ```
-
-3. **Instalar as dependências:**
-
-    ```sh
-    echo 'INSIRA O COMANDO DE INSTALAÇÃO AQUI'
-    ```
-
-### Uso
-
-Executar o projeto com:
-
-```sh
-echo 'INSIRA O COMANDO DE EXECUÇÃO AQUI'
-```
-
 
 [back-to-top]: https://img.shields.io/badge/-VOLTAR_ao_TOPO-151515?style=flat-square
 
