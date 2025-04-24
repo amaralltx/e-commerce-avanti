@@ -3,7 +3,7 @@
 <!-- ESTILO DE CABEÇALHO: CLÁSSICO -->
 <div align="center">
 
-<img src="assets/svg/logo.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Logotipo do Projeto"/>
+<img src="assets/svg/avanti-logo.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Logotipo do Projeto"/>
 
 # E-COMMERCE-AVANTI
 
@@ -41,12 +41,6 @@ O **E-COMMERCE-AVANTI** é um projeto desenvolvido para a Avanti Inovation Class
 - Layout responsivo para desktop e dispositivos móveis.
 - Navegação clara e componentes reutilizáveis.
 - 
----
-
-## Funcionalidades
-
-<code>❯ REPLACE-ME</code>
-
 ---
 
 ## Estrutura do Projeto
