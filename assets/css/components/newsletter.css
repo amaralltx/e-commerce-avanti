@@ -17,7 +17,6 @@
 }
 
 .newsletter-form {
-  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +114,8 @@
   .newsletter-form {
     flex-direction: column;
     padding: 38px 16px;
-    max-width: 100vw;
+    width: 90%;
+    min-width: 350px;
   }
   .newsletter-text-input, .newsletter-button {
     width: 325px;

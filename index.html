@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Loja online com os melhores produtos e ofertas imperdíveis." />
+  <meta name="keywords" content="e-commerce, moda, eletrônicos, promoções" />
+  <meta name="author" content="Lucas Amaral" />
   <title>AVANTI - E-commerce</title>
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -24,36 +27,41 @@
     <!-- Cabeçalho -->
     <header class="header">
       <!-- Banner cupom promocional -->
-      <div class="promo-banner">
+      <div class="promo-banner" tabindex="0" aria-label="Cupom promocional">
         <b>
           Ganhe <span class="discount-value">R$10,00</span> de
           desconto no seu primeiro pedido. Utilize o cupom
           <span class="cupom">DESCONTO10</span>
         </b>
       </div>
+
       <!-- Parte superior do cabeçalho -->
-      <a href="#" data-department="Todas as Categorias" class="menu-mobile-btn">
-        <img src="assets/svg/header/menu.svg" alt="" />
+      <a href="#" data-department="Todas as Categorias" class="menu-mobile-btn" aria-label="Abrir menu de categorias">
+        <img src="assets/svg/header/menu.svg" alt="Ícone do menu" />
       </a>
+
       <!-- Logo -->
       <div class="logo">
-        <a href="">
-          <img src="assets/svg/logo.svg" alt="" />
+        <a href="/" aria-label="Voltar para a página inicial">
+          <img src="assets/svg/logo.svg" alt="Logo AVANTI" />
         </a>
       </div>
+      
       <!-- Barra de pesquisa -->
-      <div class="search-container">
-        <input id="search-bar" tabindex="-1" type="text" class="search-input" placeholder="Digite aqui o que você procura" />
-        <button class="search-button">
-          <img src="assets/svg/header/search.svg" alt="" />
+      <form id="search-form" class="search-container" role="search" aria-label="Barra de pesquisa">
+        <label for="search-bar" class="hidden">Pesquisar</label>
+        <input id="search-bar" tabindex="0" type="text" class="search-input" placeholder="Digite aqui o que você procura" />
+        <button class="search-button" aria-label="Buscar">
+          <img src="assets/svg/header/search.svg" alt="Ícone de busca" />
         </button>
-      </div>
+        <div class="search-result" aria-live="polite"></div>
+      </form>
 
       <!-- Usuário e carrinho -->
       <div class="user-cart">
         <div class="user-account">
           <div class="user-icon">
-            <a href=""><img src="assets/svg/header/user.svg" alt="" /></a>
+            <a href="#" aria-label="Acessar conta do usuário"><img src="assets/svg/header/user.svg" alt="Ícone do usuário" /></a>
           </div>
           <div class="user-info">
             <span class="greeting">Olá,</span>
@@ -61,18 +69,18 @@
           </div>
         </div>
         <div class="cart">
-          <a href=""><img src="assets/svg/header/checkout.svg" alt="" /></a>
-          <span class="cart-count">2</span>
+          <a href="#" aria-label="Ir para o carrinho de compras"><img src="assets/svg/header/checkout.svg" alt="Ícone do carrinho" /></a>
+          <span class="cart-count" aria-label="2 itens no carrinho">2</span>
         </div>
       </div>
 
       <!-- Parte inferior do cabeçalho -->
       <!-- Navegação -->
-      <nav class="navigation">
+      <nav class="navigation" role="navigation" aria-label="Menu principal">
         <ul class="nav-list">
           <li class="nav-item categories dropdown">
-            <a id="menu-button" tabindex="-1" href="#" data-department="Todas as Categorias" class="dropdown-toggle">
-              <img src="assets/svg/header/menu.svg" style="max-height: 1.5em" alt="" />
+            <a id="menu-button" tabindex="0" href="#" data-department="Todas as Categorias" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              <img src="assets/svg/header/menu.svg" style="max-height: 1.5em" alt="Ícone do menu" />
               <span><b>Todas as Categorias</b></span>
             </a>
           </li>
@@ -102,19 +110,19 @@
           </li>
         </ul>
         <!-- Menu expansivo da nav bar -->
-        <div id="menu_root" class="menu-root"></div>
+        <div id="menu_root" class="menu-root" aria-live="polite"></div>
       </nav>
     </header>
 
-    <main id="main-content"  tabindex="-1" class="main-content">
+    <main id="main-content" tabindex="0" class="main-content" role="main">
       <!-- Banner promocional -->
-      <section class="super-sale-banner">
-        <a href="">
-        <picture>
+      <section class="super-sale-banner" aria-label="Super promoção">
+        <a href="#">
+          <picture>
             <!-- Imagem para mobile -->
             <source media="(max-width: 850px)" srcset="assets/img/banner-super-sale-mobile.png">
 
-            <!-- Imagem para desktok -->
+            <!-- Imagem para desktop -->
             <source media="(min-width: 851px)" srcset="assets/img/banner-super-sale.png">
 
             <!-- fallback -->
@@ -124,7 +132,8 @@
       </section>
 
       <!-- Carrossel de produtos -->
-      <slider-products class="first-slider"></slider-products>
+      <slider-products class="first-slider" aria-label="Carrossel de produtos"></slider-products>
+
 
       <!-- Seção de informações -->
       <info-section 
@@ -191,22 +200,21 @@
       </info-section>
 
       <!-- Carrossel de produtos -->
-      <slider-products class="hide-on-mobile"></slider-products>
+      <slider-products class="hide-on-mobile" aria-label="Carrossel de produtos"></slider-products>
 
       <!-- Seção com banner com chamada para contato -->
-      <section class="contact-banner">
+      <section class="contact-banner" aria-label="Entre em contato">
         <picture>
           <!-- Imagem para mobile -->
           <source media="(max-width: 390px)" srcset="assets/img/banner-call-bg-mobile.png">
 
-          <!-- Imagem para desktok -->
+          <!-- Imagem para desktop -->
           <source media="(min-width: 391px)" srcset="assets/img/banner-call-bg.png">
 
           <!-- Fallback -->
-          <img src="assets/img/banner-call-bg.png" alt="" class="contact-image" />
+          <img src="assets/img/banner-call-bg.png" alt="Banner entre em contato conosco" class="contact-image" />
         </picture>
-        <span class="contact-banner-text">Entre em contato conosco e verifique a disponibilidade
-          para sua região!</span>
+        <span class="contact-banner-text">Entre em contato conosco e verifique a disponibilidade para sua região!</span>
       </section>
 
 
@@ -292,7 +300,7 @@
           </div>
         </div>
         
-        <!-- Payment Methods -->
+        <!-- Métodos de Pagamento -->
         <div class="payment-methods">
           <img src="assets/svg/footer/amex.svg" alt="">
           <img src="assets/svg/footer/mastercard.svg" alt="">
@@ -351,6 +359,9 @@
       </div>
     </section>
   </template>
+
+  <!-- Scrpit de pesquisa -->
+  <script src="assets/js/search.js"></script>
 
   <!-- Script exibição do menu -->
   <script src="assets/js/toggle_menu.js"></script>

@@ -159,6 +159,13 @@
 .menu-mobile-btn > img {
   height: 30px;
 }
+
+.search-result {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
 @media (max-width: 1300px){
   .logo {
     margin-right: 32px;
@@ -175,7 +182,7 @@
       "promo  promo promo promo promo"
       ". menu-btn logo  cart ."
       ".  search search search .";
-      grid-template-columns: auto auto auto auto  auto;
+      grid-template-columns: 0px auto auto auto  0px;
       grid-template-rows: max-content max-content max-content;  
       justify-content: space-between;  
       gap: 22px;
@@ -190,7 +197,7 @@
     align-items: center; 
   }
   .logo{
-    margin: 0;
+    margin: 0 auto;
   }
   .search-container {
     width: 100%;
