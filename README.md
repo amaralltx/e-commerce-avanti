@@ -50,9 +50,6 @@ https://amaralltx.github.io/e-commerce-avanti/
  
 - [Estrutura do Projeto](#estrutura-do-projeto)
  
-  - [Índice do Projeto](#índice-do-projeto)
-
- 
 ---
  
 
