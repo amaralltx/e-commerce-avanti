@@ -7,7 +7,7 @@
  
 
  
-<img src="assets/svg/avanti-logo.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Logotipo do Projeto"/>
+<img src="assets/svg/avanti-logo.svg" width="20%" style="position: relative; top: 0; right: 0;" alt="Logotipo do Projeto"/>
  
 
  
